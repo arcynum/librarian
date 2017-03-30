@@ -15,7 +15,8 @@
 				<StandardTile
 					icon="{RoleModel&gt;icon}"
 					type="Monitor"
-					title="{RoleModel&gt;description}" />
+					title="{RoleModel&gt;description}"
+					press="onTilePress" />
 			</TileContainer>
 
 		</content>

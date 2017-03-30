@@ -3,6 +3,7 @@ sap.ui.define([
 	"sap/ui/model/json/JSONModel"
 ], function(Controller, JSONModel) {
 	"use strict";
+	
 
 	return Controller.extend("librarian.controllers.Home", {
 
@@ -12,8 +13,12 @@ sap.ui.define([
 			// Bind the JSON object.
 			let roles = new JSONModel("librarian/models/roles.json");
 			this.getView().setModel(roles, "RoleModel");
-		}
-		
+		},
+
+		onTilePress: function(event) {
+			console.log("I was pressed");
+		},
+
 	});
 
 });
