@@ -8,10 +8,7 @@ sap.ui.define(["sap/ui/core/UIComponent"], function(UIComponent) {
 		},
 
 		init: function() {
-			console.log("Starting the init function");
 			UIComponent.prototype.init.apply(this, arguments);
-
-			console.log("Intialize the router");
 			this.getRouter().initialize();
 		}
 
