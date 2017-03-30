@@ -4,7 +4,6 @@ sap.ui.define(["sap/ui/core/UIComponent"], function(UIComponent) {
 	return UIComponent.extend("librarian.Component", {
 
 		metadata: {
-			rootView: "librarian.views.home",
 			manifest: "json"
 		},
 
