@@ -2,17 +2,17 @@
 	"roles": [{
 		"name": "linker",
 		"description": "I am a linker",
-		"href": "wut",
+		"href": "Linker",
 		"icon": "sap-icon://chain-link"
 	}, {
 		"name": "librarian",
 		"description": "I am a librarian",
-		"href": "wut",
+		"href": "Librarian",
 		"icon": "sap-icon://education"
 	}, {
 		"name": "analyst",
 		"description": "I am an analyst",
-		"href": "wut",
+		"href": "Analyst",
 		"icon": "sap-icon://area-chart"
 	}]
 }

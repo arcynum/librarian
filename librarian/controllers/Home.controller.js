@@ -1,11 +1,10 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
+	"./AbstractController",
 	"sap/ui/model/json/JSONModel"
-], function(Controller, JSONModel) {
+], function(AbstractController, JSONModel) {
 	"use strict";
 	
-
-	return Controller.extend("librarian.controllers.Home", {
+	return AbstractController.extend("librarian.controllers.Home", {
 
 		onInit: function() {
 			console.log("Home controller init");
@@ -16,7 +15,14 @@ sap.ui.define([
 		},
 
 		onTilePress: function(event) {
+			let path = event.getSource().getBindingContext("RoleModel").getPath();
+			let value = this.getView().getModel("RoleModel").getProperty(path);
+
+			console.log(path);
+			console.log(value);
 			console.log("I was pressed");
+
+			this.getRouter().navTo(value.href, {}, true);
 		},
 
 	});

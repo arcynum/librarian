@@ -5,8 +5,8 @@
 		"id": "Librarian",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
-		"title": "{{application.Title}}",
-		"description": "{{application.Description}}",
+		"title": "{{application.title}}",
+		"description": "{{application.description}}",
 		"applicationVersion": {
 			"version": "1.0.0"
 		}
@@ -46,21 +46,29 @@
 				"controlAggregation": "pages",
 				"transition": "show",
 				"bypassed": {
-					"target": "notFound"
+					"target": "404"
 				}
 			},
 			"routes": [{
-					"pattern": "",
-					"name": "Home",
-					"target": "home"
+				"pattern": "",
+				"name": "Home",
+				"target": "Home"
+			}, {
+				"pattern": "librarian",
+				"name": "Librarian",
+				"target": "Librarian"
 			}],
 			"targets": {
-				"home": {
+				"Home": {
 					"viewName": "Home",
 					"viewLevel": 1
 				},
-				"notFound": {
-					"viewName": "NotFound",
+				"Librarian": {
+					"viewName": "Librarian",
+					"viewLevel": 1
+				},
+				"404": {
+					"viewName": "404",
 					"transition": "show"
 				}
 			}
