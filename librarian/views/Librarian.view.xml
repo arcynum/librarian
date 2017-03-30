@@ -19,7 +19,7 @@
 						ariaLabelledBy="librarian-title">
 						<f:toolbar>
 							<Toolbar>
-								<Title id="librarian-title" text="Librarian" />
+								<Title id="librarian-title" text="{i18n&gt;librarian}" />
 							</Toolbar>
 						</f:toolbar>
 						<f:layout>
@@ -29,29 +29,29 @@
 							<f:FormContainer ariaLabelledBy="want-title">
 								<f:toolbar>
 									<Toolbar>
-										<Title id="want-title" text="Move Dataset" />
+										<Title id="want-title" text="{i18n&gt;dataset}" />
 									</Toolbar>
 								</f:toolbar>
 								<f:formElements>
-									<f:FormElement label="Dataset Name">
+									<f:FormElement label="{i18n&gt;dataset.name}">
 										<f:fields>
 											<Input id="dataset" required="true" />
 										</f:fields>
 									</f:FormElement>
-									<f:FormElement label="Destination">
+									<f:FormElement label="{i18n&gt;destination}">
 										<f:fields>
 											<Select
 												forceSelection="true"
 												icon="sap-icon://filter"
 												autoAdjustWidth="true">
-												<core:Item key="linker" text="Linker" />
-												<core:Item key="analyst" text="Analyst" />
+												<core:Item key="linker" text="{i18n&gt;linker}" />
+												<core:Item key="analyst" text="{i18n&gt;analyst}" />
 											</Select>
 										</f:fields>
 									</f:FormElement>
 									<f:FormElement label="Submit">
 										<f:fields>
-											<Button id="submit" type="Submit" text="Submit" press="onSubmit" />
+											<Button id="submit" text="{i18n&gt;submit}" press="onSubmit" />
 										</f:fields>
 									</f:FormElement>
 								</f:formElements>
