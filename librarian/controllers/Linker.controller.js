@@ -4,7 +4,7 @@ sap.ui.define([
 ], function(AbstractController, MessageToast) {
 	"use strict";
 	
-	return AbstractController.extend("librarian.controllers.Librarian", {
+	return AbstractController.extend("librarian.controllers.Linker", {
 
 		onInit: function() {
 		},

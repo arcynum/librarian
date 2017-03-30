@@ -6,9 +6,9 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:core="sap.ui.core"
 	xmlns:f="sap.ui.layout.form"
-	controllerName="librarian.controllers.Librarian">
+	controllerName="librarian.controllers.Linker">
 	<Page
-		title="{i18n&gt;librarian.title}" 
+		title="{i18n&gt;linker.title}" 
 		showNavButton="true"
 		navButtonPress="onNavBack">
 		<content>
@@ -16,10 +16,10 @@
 				<content>
 					<f:Form
 						editable="true"
-						ariaLabelledBy="librarian-title">
+						ariaLabelledBy="linker-title">
 						<f:toolbar>
 							<Toolbar>
-								<Title id="librarian-title" text="Librarian" />
+								<Title id="linker-title" text="Linker" />
 							</Toolbar>
 						</f:toolbar>
 						<f:layout>
@@ -29,7 +29,7 @@
 							<f:FormContainer ariaLabelledBy="want-title">
 								<f:toolbar>
 									<Toolbar>
-										<Title id="want-title" text="Move Dataset" />
+										<Title id="want-title" text="I want to..." />
 									</Toolbar>
 								</f:toolbar>
 								<f:formElements>
@@ -44,7 +44,6 @@
 												forceSelection="true"
 												icon="sap-icon://filter"
 												autoAdjustWidth="true">
-												<core:Item key="linker" text="Linker" />
 												<core:Item key="analyst" text="Analyst" />
 											</Select>
 										</f:fields>

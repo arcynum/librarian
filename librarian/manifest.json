@@ -57,6 +57,18 @@
 				"pattern": "librarian",
 				"name": "Librarian",
 				"target": "Librarian"
+			}, {
+				"pattern": "linker",
+				"name": "Linker",
+				"target": "Linker"
+			}, {
+				"pattern": "analyst",
+				"name": "Analyst",
+				"target": "Analyst"
+			}, {
+				"pattern": "success",
+				"name": "Success",
+				"target": "Success"
 			}],
 			"targets": {
 				"Home": {
@@ -65,6 +77,18 @@
 				},
 				"Librarian": {
 					"viewName": "Librarian",
+					"viewLevel": 1
+				},
+				"Linker": {
+					"viewName": "Linker",
+					"viewLevel": 1
+				},
+				"Analyst": {
+					"viewName": "Analyst",
+					"viewLevel": 1
+				},
+				"Success": {
+					"viewName": "Success",
 					"viewLevel": 1
 				},
 				"404": {

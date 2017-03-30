@@ -7,7 +7,6 @@ sap.ui.define([
 	return AbstractController.extend("librarian.controllers.404", {
 
 		onInit: function() {
-			console.log("404 controller init");
 		},
 
 	});
