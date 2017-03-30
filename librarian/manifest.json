@@ -26,7 +26,7 @@
 	"sap.ui5": {
 		"_version": "1.1.0",
 		"rootView": {
-			"viewName": "librarian.views.Home",
+			"viewName": "librarian.views.Application",
 			"type": "XML"
 		},
 		"models": {
@@ -42,7 +42,7 @@
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
 				"viewPath": "librarian.views",
-				"controlId": "home-id",
+				"controlId": "app-id",
 				"controlAggregation": "pages",
 				"transition": "show",
 				"bypassed": {
