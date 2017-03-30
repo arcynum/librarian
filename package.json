@@ -1,0 +1,25 @@
+{
+  "name": "librarian",
+  "version": "1.0.0",
+  "description": "A User Interface for managing datasets on a server",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arcynum/librarian.git"
+  },
+  "author": "Chris Hamilton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arcynum/librarian/issues"
+  },
+  "homepage": "https://github.com/arcynum/librarian#readme",
+  "devDependencies": {
+    "eslint": "^3.18.0",
+    "eslint-config-standard": "^7.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.1.1"
+  }
+}

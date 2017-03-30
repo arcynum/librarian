@@ -1,0 +1,69 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"_version": "1.1.0",
+		"id": "Librarian",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"title": "{{application.Title}}",
+		"description": "{{application.Description}}",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.1.0",
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"_version": "1.1.0",
+		"rootView": {
+			"viewName": "librarian.views.Home",
+			"type": "XML"
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "librarian.i18n.i18n"
+				}
+			}
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "librarian.views",
+				"controlId": "home-id",
+				"controlAggregation": "pages",
+				"transition": "show",
+				"bypassed": {
+					"target": "notFound"
+				}
+			},
+			"routes": [{
+					"pattern": "",
+					"name": "Home",
+					"target": "home"
+			}],
+			"targets": {
+				"home": {
+					"viewName": "Home",
+					"viewLevel": 1
+				},
+				"notFound": {
+					"viewName": "NotFound",
+					"transition": "show"
+				}
+			}
+		}
+	}
+}
